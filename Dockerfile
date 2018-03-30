@@ -1,5 +1,7 @@
 FROM bitnami/minideb:jessie
 MAINTAINER Mario Cho "hephaex@gmail.com"
+ENV BIND_USER=bind \
+    DATA_DIR=/data
 
 RUN echo "deb http://ftp.debian.org/debian jessie-backports main" > \
   /etc/apt/sources.list.d/backports.list && \
