@@ -21,6 +21,6 @@ docker run --name bind -it --rm \
   --publish 53:53/udp \
   --publish 10000:10000/tcp \
   --volume /var/docker/shared/bind:/data \
-  hephaex/bind \
-  -h Persistence
+  -h Persistence \
+  hephaex/bind
 ```
