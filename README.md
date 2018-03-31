@@ -1,4 +1,4 @@
-# hephaex bind docker
+# bind docker
 
 ## Get start & Installiation
  On Dockerhub, https://hub.docker.com/hephaex/bind pre-builded the images of bind.
