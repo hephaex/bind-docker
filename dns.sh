@@ -2,7 +2,7 @@
 set -e
 
 PASSWORD=${PASSWORD:-password}
-ᆻᆻWEBMIN=${WEBMIN:-true}
+WEBMIN=${WEBMIN:-true}
 
 BIND_DATA=${DATA_DIR}/bind
 WEBMIN_DATA=${DATA_DIR}/webmin
