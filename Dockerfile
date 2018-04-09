@@ -4,13 +4,13 @@ ENV BIND_USER=bind \
     DATA_DIR=/data
 
 RUN echo "deb http://ftp.debian.org/debian jessie-backports main" > \
-  /etc/apt/sources.list.d/backports.list && \
-  export DEBIAN_FRONTEND=noninteractive && \
-  apt-get update -y && \
+      /etc/apt/sources.list.d/backports.list && \
+    export DEBIAN_FRONTEND=noninteractive && \
+    apt-get update -y && \
     apt-get install -y bind9 \
     bind9-host \
     dnsutils && \
-  rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/*
 
 ADD ./dns.sh /sbin/dns.sh
 RUN chmod 755 /sbin/dns.sh
